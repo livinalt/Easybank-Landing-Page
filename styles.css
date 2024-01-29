@@ -1,24 +1,297 @@
 *{
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     font-size: 18px;
+    margin: 0px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+a{
+   text-decoration: none;
 }
 
 nav{
-
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color:hsl(0, 0%, 100%);
+    padding: 0px 40px;
+    z-index: 10;
+    position: relative;
 }
+nav a{
+    text-decoration: none;
+}
+
+#nav_left{
+    padding: 24px 0px;
+    margin-top: 10px;
+}
+
+#nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_links #links{
+    font-size: 12px;
+    padding: 8px 32px;
+}
+
+#links:hover{
+    color: ;
+}
+
+
+#nav_right #invite{
+    margin:24px 0px ;
+    padding: 8px 24px;
+    border: 0.5px solid hsl(136, 65%, 51%);
+    border-radius: 12px;
+    background-color: hsl(136, 65%, 51%);
+    cursor: pointer;
+    color: hsl(0, 0%, 100%)
+;
+}
+
+#invite:hover{
+    border: 0.5px solid hsl(136, 65%, 51%);
+    cursor: pointer;
+    /* border-radius: 12px;
+    background-color: hsl(136, 65%, 51%); */
+    background-image: linear-gradient(140deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+}
+
+
+#invite a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* hero section */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-content: center;        
+}
+
+.content{
+    padding: 48px 0px 0px 0px;
+    margin: 60px 0px 60px 60px;
+}
+
+.content .hero_head{
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.content .hero_text{
+    font-size: 14px;
+    /* width: 50%; */
+}
+
+.hero_head{
+    /* width: 50%; */
+}
+
+.hero #invite{
+    padding: 8px 24px;
+    border: 0.5px solid hsl(136, 65%, 51%);
+    border-radius: 12px;
+    background-color: hsl(136, 65%, 51%);
+}
+
+#invite a{
+    text-decoration: none;
+}
+
+.hero_image{
+   width: 70%;
+   z-index: 5;
+    position: relative;
+    width: 80%;
+    left: 150px;
+    bottom: 200px;
+    margin-bottom: -900px;
+}
+
+.hero_image_background{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    transform: scale(1);
+    top: -50px;
+    margin-left: 0px;
+}
+
+/* .hero_image_mobile{
+    d
+} */
+
+
+.section_one{
+    background-color:hsl(220, 16%, 96%);
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_one #head .easybank{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.section_one #head p{
+    width: 60%;
+    line-height: 32px;
+}
+
+
+
+.sub_reasons{
+    display: flex;
+    margin-top: 48px;
+}
+
+
+.sub_reasons p{
+    width: 80%;
+    font-size: 12px;
+}
+/*  */
+.section_two{
+    padding: 60px 60px;
+}
+
+.section_two p{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.articles{
+    display: flex;
+}
+
+/* #sub_article{
+    padding-right: 80px;
+    margin-right: 100px;
+} */
+
+#sub_article_text{
+    color:hsl(233, 26%, 24%); 
+    width: 110%;
+}
+
+#sub_article_text:hover{
+    color:hsl(136, 65%, 51%);
+}
+
+
+.sub_articles img{
+    width:80%
+}
+
+.text_currency, .text_restaurant, .text_plane, .text_confetti{
+    background-color: white;
+    padding: 24px;
+    width: 80%;        
+}
+
+
+.sub_articles p{
+    font-size: 12px;    
+}
+
+
+.text_restaurant h4{
+    width: 110%;    
+}
+
+
+#currency{
+    height: 36%;
+}
+
 
 footer{
     background-color: hsl(233, 26%, 24%);
     color: hsl(0, 0%, 100%) ;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
+    padding: 20px 0px;
 }
+
+#footer_logo img{
+    background-blend-mode: soft-light;
+    margin-top: 16px;
+}
+
+#socials{
+    margin-top: 0px;
+}
+
+#icons{
+    margin: 0px 4px;
+    width: 24px;
+    border-radius: 32px;
+}
+
+#icons:hover{
+    background-color:hsl(136, 65%, 51%);
+    
+}
+
+
 footer a{
     
     color: hsl(0, 0%, 100%) ;
     text-decoration: none;
+}
+
+footer #footer_links{
+    display: flex;
+}
+
+
+#footer_links #links:hover{
+    color: hsl(136, 65%, 51%);
+}
+
+footer #link_col_left{
+    margin-right: 120px;
+}
+
+footer #link_col_left #links{
+    font-size: 12px;
+}
+
+footer #link_col_right #links{
+    font-size: 12px;
+}
+
+
+.footer_id button{
+    padding: 8px 24px;
+    border: 0.5px solid hsl(136, 65%, 51%);
+    border-radius: 12px;
+    background-color: hsl(136, 65%, 51%);
+}
+
+.footer_id button{
+    margin-top: 16px;
+}
+
+
+#copyright{
+    /* margin-top: 28px; */
+    font-size: 12px;
+    color: hsl(0, 0%, 90%);
 }
