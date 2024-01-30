@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-size: 18px;
     margin: 0px;
@@ -31,11 +32,16 @@ nav a{
     margin-top: 10px;
 }
 
+#menu_bar{
+    display: none;
+}
+
 #nav_links{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 #nav_links #links{
     font-size: 12px;
@@ -50,15 +56,12 @@ nav a{
     border-radius: 12px;
     background-color: hsl(136, 65%, 51%);
     cursor: pointer;
-    color: hsl(0, 0%, 100%)
-;
+    color: hsl(0, 0%, 100%);
 }
 
 #invite:hover{
     border: 0.5px solid hsl(136, 65%, 51%);
     cursor: pointer;
-    /* border-radius: 12px;
-    background-color: hsl(136, 65%, 51%); */
     background-image: linear-gradient(140deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
 }
 
@@ -90,7 +93,7 @@ nav a{
 
 .content .hero_text{
     font-size: 14px;
-    /* width: 50%; */
+    
 }
 
 .hero_head{
@@ -127,9 +130,9 @@ nav a{
     margin-left: 0px;
 }
 
-/* .hero_image_mobile{
-    d
-} */
+.hero_image_mobile{
+    display: none;
+} 
 
 
 .section_one{
@@ -314,6 +317,13 @@ footer #link_col_right #links{
         display: flex;
         justify-content: space-between;
     }
+ 
+    #menu_bar{
+        display:inline ;
+        width: 24px;
+        margin-left: 160px;
+    }
+
 
     #nav_links{
         display: none;
@@ -335,6 +345,10 @@ footer #link_col_right #links{
         padding-bottom:50px ;
     }
 
+    .hero_image_mobile{
+        display: block;
+    } 
+
     .hero_text{
         text-align: center;
         width: 90%;
@@ -343,7 +357,7 @@ footer #link_col_right #links{
     }
 
     .hero_images {
-        display: none; /* Hide images on mobile */
+        display: none; 
     }
 
     .content {
