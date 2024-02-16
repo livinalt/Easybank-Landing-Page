@@ -15,4 +15,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     menuIcon.addEventListener('click', toggleNavLinks);
-});
+}
+);

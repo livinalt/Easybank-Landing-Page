@@ -298,16 +298,13 @@ footer #link_col_right #links{
 
 /* Mobile Styles */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
     
-    body{
-        text-align: center;
-    }
+  
     .navbar {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        box-sizing: content-box;
     }
     #links, #nav_right button{
         display: none;
@@ -329,93 +326,113 @@ footer #link_col_right #links{
         display: none;
     }
 
-    #logo{
-        width: 100%;
+    .content {
+        padding-right: 40px;
     }
 
-    #nav_links{
-        display: flex;
+    .hero_head {
+        
+        text-align: center;
+    }
+
+    .content .hero_head {
+        font-size: 2.5rem;
+    }
+
+    .sub_reasons {
         flex-wrap: wrap;
     }
 
-    .hero {
+    .sub_articles {
+        padding-left: -120px;
+       
+    }
+
+    footer {
+        
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footer_logo{
+        justify-content: center;
+        align-items: center;
+        padding-left: 110px;
+    }
+
+    #footer_logo.a {
+        visibility: hidden;
+    }
+
+    .footer_id{
         display: flex;
         flex-direction: column;
-        margin: 0px 20px;
-        padding-bottom:50px ;
-    }
-
-    .hero_image_mobile{
-        display: block;
-    } 
-
-    .hero_text{
-        text-align: center;
-        width: 90%;
-        margin-left: 10px;
-        padding-bottom: 10px;
-    }
-
-    .hero_images {
-        display: none; 
-    }
-
-    .content {
-        margin: 20px;
-    }
-
-    .section_one h2{
-       margin-left: -10px;
-    }
-   
-    .section_one p {
-       display: inline-block;
-    }
-
-    .section_one
-    
-
-    .sub_reasons, .articles {
-        flex-direction: column;
-    }
-
-    .sub_articles {
-        margin-bottom: 20px;
-    }
-
-    .text_currency, .text_restaurant, .text_plane, .text_confetti {
-        width: 80%;
-        margin-left: 26px;
-    }
-
-    #sub_article_text{
-       margin-left: -4px;        
-    }
-
-    footer{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;  
-        text-align: center;      
-    }
-
-    #footer_logo, #footer_links, .footer_id{
-        margin: 0px 90px;
-    }
-
-    #footer_links{
-        display: flex;                
-    }
-
-    #link_col_left{    
-        
-    }
-
-    .footer_id button{
-        padding: 0px 48px;
+        justify-content: center;
+        align-items: center;
     }
 
 }
+
+/* Tablet screen style */
+@media(max-width:840px){
+   
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .hero_text {
+        text-align: center;
+        padding: 10px 40px;
+    }
+
+    .hero_images {
+        display: none;
+    }
+
+    .section_one #head .easybank {
+        text-align: center;
+    }
+
+    .section_one #head p {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* .sub_reasons {
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+
+    .reasons{
+        padding: 40px;
+    }
+
+    .section_two p {
+        text-align: center;
+    }
+
+    .section_two {
+        width: 100%;
+    }
+
+    .articles {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub_articles {
+        padding-left: 120px;
+        padding-top: 40px;
+    }
+}
+
 
 
 /* Desktop Styles */
